@@ -1,0 +1,114 @@
+.left_side 
+	background-color: #111
+	position: fixed
+	left: 0
+	top: 0
+	width: 50px
+	height: 100%
+	z-index: 10
+	color: #fff	
+	&.active
+		width: 300px
+	transition: all .5s
+	overflow-x: hidden
+		
+
+	&.active
+		.user_info
+			opacity: 1
+		.btn_mnu
+			background-color: transparent
+		nav
+			margin-top: 35px
+
+.btn_mnu
+	float: right
+	transition: all .5s
+
+.aside_content
+	position: absolute
+	top: 50px
+	width: 100%
+	padding: 25px 0
+	
+.user_info
+	text-align: center
+	opacity: 0
+	transition: all .2s
+	white-space: nowrap
+
+	& img
+		width: 120px
+		height: 120px
+		border-radius: 50%
+		
+	h2
+		font-size: 16px
+
+	p
+		font-size: 12px
+		color: #434343
+		letter-spacing: 1px
+		
+.aside_content nav ul,
+.aside_content nav ul li
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+.aside_content nav ul li
+
+	a
+		color: #b2b2b2 
+		padding-left: 70px
+		display: block
+		padding: 10px 0 10px 70px
+		border-bottom: 1px solid #212121
+		white-space: nowrap
+		transition: all .5s
+		background-color: #111
+		
+		&:first-child
+			border-top: 1px solid #212121
+		&:hover
+			background-color: tomato
+			color: #fff
+
+.aside_content nav
+	padding: 35px 0
+	margin-top: -110px
+	transition: all .5s
+	position: relative
+	z-index: 5
+
+.left_side.active .aside_content li a::before
+	margin-left: -32px
+
+.aside_content li a::before
+	display: inline-block
+	font-family: "linea-basic-10"
+	font-size: 25px
+	line-height: 1
+	margin-left: -58px
+	margin-right: 13px
+	margin-top: -4px
+	vertical-align: middle
+	transition: all .5s
+	
+
+.aside_content li a.portfolio::before
+	content: "u"
+.aside_content li a.about::before
+	content: "{"
+.aside_content li a.contact::before
+	content: "R"
+
+.left_side
+	outline: none
+
+.left_side.active .aside_content li a:hover
+	text-indent: 5px
+
+	
+
+	

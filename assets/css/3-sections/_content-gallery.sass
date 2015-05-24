@@ -1,0 +1,50 @@
+.content
+	position: relative
+	margin: 5px 5px 55px 55px
+	left: 0
+
+.gallery a
+	overflow: hidden
+	width: 320px
+	display: block
+	min-height: 50px
+
+.gallery img
+	display: block
+	max-width: 100%
+	transition: all 15s
+
+	&:hover
+		transform: scale(5)
+
+.left_side.active + .content
+	left: 250px
+	transition: all .5s	
+	transition-delay: .5s
+
+.filter_items
+	position: fixed
+	bottom: 0
+	color: #fff
+	right: 0
+	text-align: right
+	width: 100%
+	padding: 10px 10px 0 
+	background-color: #181818
+
+.filter_label
+	background-color: transparent
+	border-color: #fff
+	padding: 5px 15px
+	transition: all .5s
+	opacity: .4
+	margin: 0 3px 15px
+	font-size: 12px
+	letter-spacing: 3px 
+	border: 1px solid #fff
+	
+	&:hover,
+	&.active
+		background-color: tomato
+		opacity: 1
+		border-color: tomato

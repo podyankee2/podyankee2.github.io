@@ -1,0 +1,24 @@
+
+
+title: Cool Portfolio
+description: Thinker // Designer // YouTuber
+github:
+  repo:  github.com/podyankee/cool-portfolio.io        
+  
+  
+url: http://podyankee.github.io/cool-portfolio
+baseurl: /
+
+# Build settings
+
+markdown: kramdown
+permalink: pretty
+
+port: 8000
+
+Обо мне: '/about'
+exclude: ['the_design.psd']
+
+sass:
+  sass_dir: assets/css
+  style: nested
